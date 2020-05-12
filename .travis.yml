@@ -1,0 +1,32 @@
+language: node_js
+
+node_js:
+  - node
+  - 14
+  - 13
+  - 12
+  - 11
+
+before_script:
+  - npm run install:dev
+
+script:
+  - node --version
+  - npm --version
+  - npm run test:codecov
+  - npm run test:coveralls
+
+cache:
+  npm: true
+  packages: true
+
+os:
+  - linux
+  - windows
+
+arch: arm64
+
+dist: xenial
+
+matrix:
+  fast_finish: true

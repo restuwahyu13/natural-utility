@@ -1,0 +1,14 @@
+node_modules
+big.dummy.json
+coverage
+small.dummy.json
+__tests__
+example
+language
+.gitignore
+.coveralls.yml
+.travis.yml
+appveyor.yml
+codecov.yml
+jest.config.js
+tests.js
