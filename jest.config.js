@@ -16,7 +16,5 @@ module.exports = {
     "jsx",
     "json",
     "node"
-  ],
-  notify: true,
-  testTimeout : 50000
+  ]
 }
