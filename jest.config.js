@@ -18,5 +18,5 @@ module.exports = {
     "node"
   ],
   notify: true,
-  testTimeout : 100000
+  testTimeout : 50000
 }
