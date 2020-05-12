@@ -33,7 +33,7 @@
 ## Get Started
 
 ### Language Translate
- + [Indonesian]()
++ [Indonesian]()
 + [English]()
 
 ### Features
@@ -41,7 +41,7 @@
 +	[x] Parallel Route Middleware (Support Koa and Express)
 +	[x] Parallel Plugin Middleware (Support Koa and Express)
 +	[x] Flash Message
-+   [x] Global Access Module
++ [x] Global Access Module
 
 ### Installation
 ```sh
@@ -86,7 +86,7 @@ server.listen(3000, () => console.log("server is running"));
 
 #### naturalModule
 
-  + **globalModule (@param: input, @param: module)** function method of `naturalModule` to register each given module without the need to rewrite` require`, then the module will be run as parallel, the module can also be accessed as a global in every file or route in many ways, which you haven't to to re-register the same module as you want to use it, **note**: global module only supports writing format **CommonJS as require**.
+  + **globalModule (@param: input, @param: module)** function method of `naturalModule` to register each given module without the need to rewrite` require`, then the module will be run as parallel, the module can also be accessed as a global in every file or route in many ways, which you haven't to re-register the same module as you want to use it, **note**: global module only supports writing format **CommonJS as require**.
 
 	-  **Before - example usage not using natural-utility**
 
