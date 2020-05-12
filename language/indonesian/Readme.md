@@ -2,7 +2,7 @@
 
 `natural-utility` adalah sebagai alat pembantu sederhana untuk mempermudah pekerjaan anda sebagai **module loader**, **route middleware**, **plugin middleware** dan **flash message**.
 
-[![Build Status](https://travis-ci.com/restuwahyu13/natural.svg?branch=master)](https://travis-ci.com/restuwahyu13/natural) [![Build status](https://ci.appveyor.com/api/projects/status/qkl13q80bi82i0a4?svg=true)](https://ci.appveyor.com/project/restuwahyu13/natural) [![codecov](https://codecov.io/gh/restuwahyu13/natural/branch/master/graph/badge.svg)](https://codecov.io/gh/restuwahyu13/natural) [![Coverage Status](https://coveralls.io/repos/github/restuwahyu13/natural/badge.svg?branch=master)](https://coveralls.io/github/restuwahyu13/natural?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.com/restuwahyu13/natural-utility.svg?branch=master)](https://travis-ci.com/restuwahyu13/natural-utility) [![Build status](https://ci.appveyor.com/api/projects/status/ju7ciy6fh42rsnkl?svg=true)](https://ci.appveyor.com/project/restuwahyu13/natural-utility) [![codecov](https://codecov.io/gh/restuwahyu13/natural-utility/branch/master/graph/badge.svg)](https://codecov.io/gh/restuwahyu13/natural-utility) [![Coverage Status](https://coveralls.io/repos/github/restuwahyu13/natural-utility/badge.svg?branch=master)](https://coveralls.io/github/restuwahyu13/natural?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Table of Contents
 
@@ -98,9 +98,9 @@
 			  // listening server
 			  server.listen(3000, () => console.log("server is running"));
 				```
-		
+
 		-  **After - example usage using natural-utility**
-	
+
 			+  ```javascript
 			   // register all module
 			   const natural = require("natural-utility");
@@ -176,20 +176,20 @@
 			  const bodyParser = require("body-parser");
 			  const cookieParser = require("cookie-parser");
 			  const logger = require("morgan");
-	  
+
 			  // init all route
 			  const indexRoute = require("./routes/home");
 			  const usersRoute = require("./routes/users");
-	  
+
 			  // register all plugin middleware
 			  app.use(bodyParser.urlencoded({ extended: false }));
 			  app.use(bodyParser.json());
 			  app.use(logger("dev"));
-	  
+
 			  // register all route middleware
 			  app.use(indexRoute);
 			  app.use(usersRoute);
-	  
+
 			  // listening server
 			  server.listen(3000, () => console.log("server is running"));
 			  ```
@@ -335,7 +335,7 @@
 
 			  // setup route middleware
 			  router.get("/", (req, res, next) => {
-			  
+
 			  // single message
 				req.flash("username already exist");
 				res.render("home", {});
@@ -344,7 +344,7 @@
 			  // export route middleware
 			  module.exports = router;
 				```
-				
+
 			+ ```javascript
 			  // routes/home.js
 
@@ -354,7 +354,7 @@
 
 			  // setup route middleware
 			  router.get("/", (req, res, next) => {
-			  
+
 				// multiple message
 			    let errors = ["username is required", "email is required", "password is required"];
 			    for(let i of errors) {
@@ -378,7 +378,7 @@
 				</body>
 			  </html>
 				```
-				
+
 			+ ```html
 			  <!-- views/home.ejs -->
 
@@ -410,11 +410,11 @@
 
 			  // init collection  
 			  const database = db.db("testing");
-			    
+
 			  // init data  
 			  const myData = { name: "John Doe", age: 28 };  
-			  
-			  // insert data to database 
+
+			  // insert data to database
 			  database.collection("test").insertOne(myData,function(err, res) {
 				   if(err) throw err;  
 			       console.log("successfuly store data to database");
@@ -494,13 +494,13 @@
 
 			  // setup schema  
 		      const setSchema = new mongoose.Schema({
-			    name: String, 
-			    age: Number 
+			    name: String,
+			    age: Number
 			  });
-			  
+
 			  // register schema
 			  const userSchema = setSchema.model("test", setSchema);
-  
+
 			  // insert data to database
 			  userSchema.created({ name: "john doe", age: 28 }, (err, res) => {
 			    if(err) return err;
@@ -522,11 +522,11 @@
 
   +	 [Vikri Kurniawan](https://github.com/vicrfiport) - English Translator
   +	 [Restu Wahyu Saputra](https://github.com/vicrfiport) - Indonesian Translator
-  
+
 +	## Changelog
 
 	+	[Changelog History](https://github.com/restuwahyu13/natural/blob/master/CHANGELOG.md)
-	
+
 +	## License
 
 	+	[MIT](https://github.com/restuwahyu13/natural/blob/master/LICENSE.md)
