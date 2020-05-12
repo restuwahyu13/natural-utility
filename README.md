@@ -3,15 +3,15 @@
 
 `natural-utility` is a simple helper tool to get easily your work as a **module loader**, **route middleware**, **plugin middleware** and **flash message**.
 
-[![Build Status](https://travis-ci.com/restuwahyu13/natural.svg?branch=master)](https://travis-ci.com/restuwahyu13/natural) [![Build status](https://ci.appveyor.com/api/projects/status/qkl13q80bi82i0a4?svg=true)](https://ci.appveyor.com/project/restuwahyu13/natural) [![codecov](https://codecov.io/gh/restuwahyu13/natural/branch/master/graph/badge.svg)](https://codecov.io/gh/restuwahyu13/natural) [![Coverage Status](https://coveralls.io/repos/github/restuwahyu13/natural/badge.svg?branch=master)](https://coveralls.io/github/restuwahyu13/natural?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.com/restuwahyu13/natural-utility.svg?branch=master)](https://travis-ci.com/restuwahyu13/natural-utility) [![Build status](https://ci.appveyor.com/api/projects/status/ju7ciy6fh42rsnkl?svg=true)](https://ci.appveyor.com/project/restuwahyu13/natural-utility) [![codecov](https://codecov.io/gh/restuwahyu13/natural-utility/branch/master/graph/badge.svg)](https://codecov.io/gh/restuwahyu13/natural-utility) [![Coverage Status](https://coveralls.io/repos/github/restuwahyu13/natural-utility/badge.svg?branch=master)](https://coveralls.io/github/restuwahyu13/natural?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
 ## Table of Contents
 
 - [Get Started](#get-started)
 	* [Language Translate](#language-translate)
-		* [Indonesian](https://github.com/restuwahyu13/natural/tree/master/language/indonesian)
-		* [English](https://github.com/restuwahyu13/natural/tree/master/language/english)
+		* [Indonesian](https://github.com/restuwahyu13/natural-utility/tree/master/language/indonesian)
+		* [English](https://github.com/restuwahyu13/natural-utility/tree/master/language/english)
 	* [Features](#features)
 	* [Installation](#installation)
 	* [Example Usage](#example-usage)
@@ -527,8 +527,8 @@ server.listen(3000, () => console.log("server is running"));
 
 ## Changelog
 
-+	[Changelog History](https://github.com/restuwahyu13/natural/blob/master/CHANGELOG.md)
++	[Changelog History](https://github.com/restuwahyu13/natural-utility/blob/master/CHANGELOG.md)
 
 ## License
 
-+	[MIT](https://github.com/restuwahyu13/natural/blob/master/LICENSE.md)
++	[MIT](https://github.com/restuwahyu13/natural-utility/blob/master/LICENSE.md)
