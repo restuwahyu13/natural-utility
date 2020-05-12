@@ -25,5 +25,5 @@ os:
 
 arch: arm64
 
-matrix:
+jobs:
   fast_finish: true
