@@ -2,10 +2,6 @@ language: node_js
 
 node_js:
   - node
-  - 14
-  - 13
-  - 12
-  - 11
 
 before_script:
   - npm run install:dev
@@ -13,8 +9,8 @@ before_script:
 script:
   - node --version
   - npm --version
-  - npm run test:codecov
   - npm run test:coveralls
+  - npm run test:codecov
 
 cache:
   npm: true
@@ -22,8 +18,7 @@ cache:
 
 os:
   - windows
-
-arch: arm64
+  - linux
 
 jobs:
   fast_finish: true
