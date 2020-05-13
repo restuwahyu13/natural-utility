@@ -39,7 +39,7 @@
 	+	### Framework Support
 
 	| Framework Support | globalModule | pluginMiddleware | flashMessage |
-	| ------------- | ------------- | ------------- | ------------- | ------------- |
+	| ------------- | ------------- | ------------- | ------------- |
 	| Express | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 	| Koa | :heavy_check_mark: | :heavy_check_mark: | :x: |
 	| Hapi | :heavy_check_mark: | :x: | :x:  |
