@@ -1,7 +1,7 @@
 natural ChangeLog
 -------------------------
 
-1.0.6.1
+1.0.7.
  * fixed parallel pluginMiddleware support chaining middleware using koa
  * remove pluginMiddlewareAsync
 
