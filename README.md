@@ -34,7 +34,7 @@
 ## Get Started
 
 ### Language Translate
-+ [Indonesian]https://github.com/restuwahyu13/natural-utility/tree/master/language/indonesian)
++ [Indonesian](https://github.com/restuwahyu13/natural-utility/tree/master/language/indonesian)
 + [English](https://github.com/restuwahyu13/natural-utility/tree/master/language/english)
 
 ### Framework Support
