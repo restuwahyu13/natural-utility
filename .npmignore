@@ -12,3 +12,5 @@ appveyor.yml
 codecov.yml
 jest.config.js
 tests.js
+CHANGELOG.md
+LICENSE.md

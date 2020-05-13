@@ -22,7 +22,6 @@ natural.pluginMiddlewareAsync(app, [
   bodyParser.urlencoded({ extended: false }),
   bodyParser.json(),
   cookieParser(),
-  cors(),
   natural.flashMessage()
 ]);
 
