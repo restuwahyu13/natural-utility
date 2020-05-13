@@ -3,9 +3,6 @@
   "version": "1.0.4",
   "description": "natural-utility is a simple helper tool to get easily your work as a module loader, route middleware, plugin middleware and flash message.",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "test:manual": "jest --config ./jest.config.js --detectOpenHandles",
     "test:lint": "standard  lib/**/*.js --fix",
