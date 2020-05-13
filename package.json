@@ -1,6 +1,6 @@
 {
   "name": "natural-utility",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "natural-utility is a simple helper tool to get easily your work as a module loader, route middleware, plugin middleware and flash message.",
   "main": "index.js",
   "scripts": {
