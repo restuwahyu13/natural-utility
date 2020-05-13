@@ -57,9 +57,9 @@
 
 
 ### Features
-+	[x] Parallel Module Loader (Support All Framework NodeJs)
-+	[x] Parallel Route Middleware (Support Koa and Express)
-+	[x] Parallel Plugin Middleware (Support Koa and Express)
++	[x] Parallel Module Loader
++	[x] Parallel Route Middleware
++	[x] Parallel Plugin Middleware
 +	[x] Flash Message
 + [x] Global Access Module
 
