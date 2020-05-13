@@ -1,9 +1,8 @@
-
 # **natural-utility**
 
 `natural-utility` is a simple helper tool to get easily your work as a **module loader**, **route middleware**, **plugin middleware** and **flash message**.
 
-[![Build Status](https://travis-ci.com/restuwahyu13/natural-utility.svg?branch=master)](https://travis-ci.com/restuwahyu13/natural-utility) [![Build status](https://ci.appveyor.com/api/projects/status/ju7ciy6fh42rsnkl?svg=true)](https://ci.appveyor.com/project/restuwahyu13/natural-utility) [![codecov](https://codecov.io/gh/restuwahyu13/natural-utility/branch/master/graph/badge.svg)](https://codecov.io/gh/restuwahyu13/natural-utility) [![Coverage Status](https://coveralls.io/repos/github/restuwahyu13/natural-utility/badge.svg?branch=master)](https://coveralls.io/github/restuwahyu13/natural?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![install size](https://packagephobia.now.sh/badge?p=natural-utility@1.0.6)](https://packagephobia.now.sh/result?p=natural-utility@1.0.6) ![node-current](https://img.shields.io/node/v/natural-utility) ![GitHub](https://img.shields.io/github/license/restuwahyu13/natural-utility)
+[![Build Status](https://travis-ci.com/restuwahyu13/natural-utility.svg?branch=master)](https://travis-ci.com/restuwahyu13/natural-utility) [![Build status](https://ci.appveyor.com/api/projects/status/ju7ciy6fh42rsnkl?svg=true)](https://ci.appveyor.com/project/restuwahyu13/natural-utility) [![codecov](https://codecov.io/gh/restuwahyu13/natural-utility/branch/master/graph/badge.svg)](https://codecov.io/gh/restuwahyu13/natural-utility) [![Coverage Status](https://coveralls.io/repos/github/restuwahyu13/natural-utility/badge.svg?branch=master)](https://coveralls.io/github/restuwahyu13/natural?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![install size](https://packagephobia.now.sh/badge?p=natural-utility@1.0.6)](https://packagephobia.now.sh/result?p=natural-utility) ![node-current](https://img.shields.io/node/v/natural-utility) ![GitHub](https://img.shields.io/github/license/restuwahyu13/natural-utility)
 
 
 ## Table of Contents
@@ -51,21 +50,21 @@
 		```
 	+	### Framework Support
 
-	| Framework Support | globalModule | pluginMiddleware | pluginMiddlewareAsync | flashMessage |
+	| Framework Support | globalModule | pluginMiddleware | flashMessage |
 	| ------------- | ------------- | ------------- | ------------- | ------------- |
-	| Express | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
-	| Koa | :heavy_check_mark: | :x: | :heavy_check_mark:  | :x: |
-	| Hapi | :heavy_check_mark: | :x: | :x:  | :x: |
-	| Fastify | :heavy_check_mark: | :heavy_check_mark: | :x:  | :x: |
-	| Restify | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Sails | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Total | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Adonis | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Feathers | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Keystone| :heavy_check_mark: | :x: | :x: | :x:  |
-	| Nest| :x: | :x: | :x: | :x:  |
-	| LoopBack| :x: | :x: | :x: | :x:  |
-	| Mean| :x: | :x: | :x: | :x:  |
+	| Express | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+	| Koa | :heavy_check_mark: | :heavy_check_mark:  | :x:  |
+	| Hapi | :heavy_check_mark: | :x: | :x: |
+	| Fastify | :heavy_check_mark: | :heavy_check_mark: | :x: |
+	| Restify | :heavy_check_mark: | :x: | :x: |
+	| Sails | :heavy_check_mark: | :x: | :x: |
+	| Total | :heavy_check_mark: | :x: | :x: |
+	| Adonis | :heavy_check_mark: | :x: | :x: |
+	| Feathers | :heavy_check_mark: | :x: | :x: |
+	| Keystone| :heavy_check_mark: | :x: | :x: |
+	| Nest| :x: | :x: | :x: |
+	| LoopBack| :x: | :x: | :x: |
+	| Mean| :x: | :x: | :x: |
 
 
 	+ ### Example Usage

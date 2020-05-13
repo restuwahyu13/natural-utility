@@ -1,8 +1,14 @@
 module.exports = function(fastify, options, done) {
-      return [
+
         fastify.get("/", (req, res) => {
-            res.view("index.ejs", {title: "tes"});
-        }),
-       done()
-    ];
+            res.view("index.ejs", {title: "hello wordl"});
+        });
+        
+        fastify.post("/", (req, res) => {
+            let name = req.body.name;
+            res.send(`my name is ${name}`);
+        });
+    
+    // must be call done because this return to next function
+    done()
 }

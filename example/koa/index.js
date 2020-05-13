@@ -23,19 +23,15 @@ const loginRoute = require("./routes/login.route");
 const registerRoute = require("./routes/register.route");
 const userRoute = require("./routes/user.route");
 
-// register all plugin middleware
-natural.pluginMiddlewareAsync(app, [
-    bodyParser({urlencoded: true, json: true}),
-])
-.then((handler) => {
-     handler.use(logger());
-});
+// register all plugin middleware with chainning middleware
+// natural.pluginMiddleware(app, [
+//     bodyParser({urlencoded: true, json: true}),
+// ])
+//.use(logger());
 
 // register all route  middleware
 natural.routeMiddleware(app, [
-    loginRoute.routes(),
-    registerRoute.routes(),
-    userRoute.routes()
+    indexRoute.routes()
 ]);
 
 // listening server

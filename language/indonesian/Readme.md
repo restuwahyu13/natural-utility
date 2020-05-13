@@ -38,21 +38,21 @@
 
 	+	### Framework Support
 
-	| Framework Support | globalModule | pluginMiddleware | pluginMiddlewareAsync | flashMessage |
+	| Framework Support | globalModule | pluginMiddleware | flashMessage |
 	| ------------- | ------------- | ------------- | ------------- | ------------- |
-	| Express | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
-	| Koa | :heavy_check_mark: | :x: | :heavy_check_mark:  | :x: |
-	| Hapi | :heavy_check_mark: | :x: | :x:  | :x: |
-	| Fastify | :heavy_check_mark: | :heavy_check_mark: | :x:  | :x: |
-	| Restify | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Sails | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Total | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Adonis | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Feathers | :heavy_check_mark: | :x: | :x: | :x:  |
-	| Keystone| :heavy_check_mark: | :x: | :x: | :x:  |
-	| Nest| :x: | :x: | :x: | :x:  |
-	| LoopBack| :x: | :x: | :x: | :x:  |
-	| Mean| :x: | :x: | :x: | :x:  |
+	| Express | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+	| Koa | :heavy_check_mark: | :heavy_check_mark: | :x: |
+	| Hapi | :heavy_check_mark: | :x: | :x:  |
+	| Fastify | :heavy_check_mark: | :heavy_check_mark: | :x:  |
+	| Restify | :heavy_check_mark: | :x: | :x: |
+	| Sails | :heavy_check_mark: | :x: | :x: |
+	| Total | :heavy_check_mark: | :x: | :x: |
+	| Adonis | :heavy_check_mark: | :x: | :x: |
+	| Feathers | :heavy_check_mark: | :x: | :x: |
+	| Keystone| :heavy_check_mark: | :x: | :x: |
+	| Nest| :x: | :x: | :x: |
+	| LoopBack| :x: | :x: | :x: |
+	| Mean| :x: | :x: | :x: |
 
 	+ ### Features
 		+	[x] Parallel Module Loader

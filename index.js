@@ -10,7 +10,7 @@
 const naturalModule = require("./lib/natural-global-module");
 const naturalRoute = require("./lib/natural-route-middleware");
 const naturalPluginSync = require("./lib/natural-plugin-middlewareSync");
-const naturalPluginAsync = require("./lib/natural-plugin-middlewareAsync");
+// const naturalPluginAsync = require("./lib/natural-plugin-middlewareAsync");
 const naturalFlash = require("./lib/natural-flash");
 /**
 *  function method for call all module in natural utility
@@ -19,7 +19,7 @@ const natural = {
 globalModule: naturalModule,
 routeMiddleware: naturalRoute,
 pluginMiddleware: naturalPluginSync,
-pluginMiddlewareAsync: naturalPluginAsync,
+// pluginMiddlewareAsync: naturalPluginAsync,
 flashMessage: naturalFlash,
 };
 

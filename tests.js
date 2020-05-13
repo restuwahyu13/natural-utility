@@ -17,12 +17,4 @@ natural.pluginMiddleware(app, [
   natural.flashMessage()
 ]);
 
-// init all function middleware
-natural.pluginMiddlewareAsync(app, [
-  bodyParser.urlencoded({ extended: false }),
-  bodyParser.json(),
-  cookieParser(),
-  natural.flashMessage()
-]);
-
 module.exports = app;
