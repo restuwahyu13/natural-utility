@@ -1,6 +1,6 @@
 {
   "name": "natural-utility",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "natural-utility is a simple helper tool to get easily your work as a module loader, route middleware, plugin middleware and flash message.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "npm" : "~6.4.1"
   },
   "author": "restu wahyu saputra <restuwahyu13@gmail.com>",
-  "licenses": "MIT",
+  "license": "MIT",
   "homepage": "https://github.com/restuwahyu13/natural-utility",
   "bugs": {
     "url": "https://github.com/restuwahyu13/natural-utility/issues"
