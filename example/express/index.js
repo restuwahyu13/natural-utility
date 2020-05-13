@@ -1,4 +1,4 @@
-const natural = require("natural");
+const natural = require("../../index");
 
 // injected for global module
 natural.globalModule(
@@ -24,7 +24,7 @@ useCreateIndex: true, useFindAndModify: false})
 const indexRoute = require("./routes/user.route");
 
 //  register to plugin middleware
-natural.pluginMiddleware(app, [
+natural.pluginMiddlewareAsync(app, [
     bodyParser.urlencoded({ extended: false }),
     bodyParser.json(),
     cookieParser(),
@@ -35,7 +35,7 @@ natural.pluginMiddleware(app, [
 natural.routeMiddleware(app, [indexRoute(router)]);
 
 // set configs
-app.set("env", process.env.PORT || 3000);
+app.set("env", process.env.PORT || 3001);
 app.set("x-powered-by", false);
 
 // listeing server

@@ -1,6 +1,13 @@
 natural ChangeLog
 -------------------------
 
+1.0.6
+ * add new feature support fastify
+ * fixed parallel pluginMiddleware support chaining middleware
+ * add new method support asyncronus using pluginMiddlewareAsync
+ * pluginMiddlewareAsync support callback promise
+ * fixed parallel route middleware using koajs
+
 1.0.5
  * fixed parallel route middleware not support asyncronus
  * add new feature pluginMiddleware and routeMiddleware supporty for koajs

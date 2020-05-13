@@ -10,6 +10,7 @@
 	* [Language Translate](#language-translate)
 		* [Indonesian](https://github.com/restuwahyu13/natural/tree/master/language/indonesian)
 		* [English](https://github.com/restuwahyu13/natural/tree/master/language/english)
+	* [Framework Support](#framework-support)
 	* [Features](#features)
 	* [Installation](#installation)
 	* [Example Usage](#example-usage)
@@ -23,6 +24,7 @@
 		* [MySQL](#my-sql)
 		* [PostgreeSQL](#postgree-sql)
 		* [Mongoose](#mongoose)
+- [Working With Framework](#working-with-framework)
 - [How To Test](#how-to-test)
 - [Contributors](#contributors)
 - [Changelog](#changelog)
@@ -31,13 +33,31 @@
 + ## Get Started
 
 	+ ### Language Translate
-		+ [Indonesian]()
-		+ [English]()
+		+ [Indonesian](https://github.com/restuwahyu13/natural-utility/tree/master/language/indonesian)
+		+ [English](https://github.com/restuwahyu13/natural-utility/tree/master/language/english)
+
+	+	### Framework Support
+
+	| Framework Support | globalModule | pluginMiddleware | pluginMiddlewareAsync | flashMessage |
+	| ------------- | ------------- | ------------- | ------------- | ------------- |
+	| Express | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
+	| Koa | :heavy_check_mark: | :x: | :heavy_check_mark:  | :x: |
+	| Hapi | :heavy_check_mark: | :x: | :x:  | :x: |
+	| Fastify | :heavy_check_mark: | :heavy_check_mark: | :x:  | :x: |
+	| Restify | :heavy_check_mark: | :x: | :x: | :x:  |
+	| Sails | :heavy_check_mark: | :x: | :x: | :x:  |
+	| Total | :heavy_check_mark: | :x: | :x: | :x:  |
+	| Adonis | :heavy_check_mark: | :x: | :x: | :x:  |
+	| Feathers | :heavy_check_mark: | :x: | :x: | :x:  |
+	| Keystone| :heavy_check_mark: | :x: | :x: | :x:  |
+	| Nest| :x: | :x: | :x: | :x:  |
+	| LoopBack| :x: | :x: | :x: | :x:  |
+	| Mean| :x: | :x: | :x: | :x:  |
 
 	+ ### Features
-		+	[x] Parallel Module Loader (Support All Framework NodeJs)
-		+	[x] Parallel Route Middleware (Support Koa and Express)
-		+	[x] Parallel Plugin Middleware (Support Koa and Express)
+		+	[x] Parallel Module Loader
+		+	[x] Parallel Route Middleware
+		+	[x] Parallel Plugin Middleware
 		+	[x] Flash Message
 		+ [x] Global Access Module
 
@@ -518,9 +538,12 @@
 		$ npm run test
 		```
 
++ ## Working With Framework
+	+	[Example Usage](https://github.com/restuwahyu13/natural-utility/tree/master/example)
+
 +  ## Contributors
 
-  +	 [Vikri Kurniawan](https://github.com/vicrfiport) - English Translator
+  +	 [Vicri Kurniawan](https://github.com/vicrfiport) - English Translator
   +	 [Restu Wahyu Saputra](https://github.com/vicrfiport) - Indonesian Translator
 
 +	## Changelog

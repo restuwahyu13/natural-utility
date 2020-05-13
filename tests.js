@@ -2,8 +2,8 @@ const natural = require("./index");
 
 // inject module
 natural.globalModule(
-  ["express", "bodyParser", "cookieParser", "fs", "path"],
-  ["express", "body-parser", "cookie-parser", "fs", "path"]
+  ["express", "bodyParser", "cookieParser", "fs", "path", "cors"],
+  ["express", "body-parser", "cookie-parser", "fs", "path", "cors"]
 );
 
 // init module
@@ -14,6 +14,16 @@ natural.pluginMiddleware(app, [
   bodyParser.urlencoded({ extended: false }),
   bodyParser.json(),
   cookieParser(),
+  cors(),
+  natural.flashMessage()
+]);
+
+// init all function middleware
+natural.pluginMiddlewareAsync(app, [
+  bodyParser.urlencoded({ extended: false }),
+  bodyParser.json(),
+  cookieParser(),
+  cors(),
   natural.flashMessage()
 ]);
 

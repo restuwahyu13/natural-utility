@@ -1,5 +1,5 @@
 // register all module
-const natural = require("natural");
+const natural = require("../../index");
 natural.globalModule(
 ["koa", "http", "Router", "mongoose", "bodyParser", "logger", "jwt"],
 ["koa", "http", "koa-router", "mongoose", "koa-body", "koa-logger", "jsonwebtoken"]);
@@ -24,10 +24,12 @@ const registerRoute = require("./routes/register.route");
 const userRoute = require("./routes/user.route");
 
 // register all plugin middleware
-natural.pluginMiddleware(app, [
+natural.pluginMiddlewareAsync(app, [
     bodyParser({urlencoded: true, json: true}),
-    logger()
-]);
+])
+.then((handler) => {
+     handler.use(logger());
+});
 
 // register all route  middleware
 natural.routeMiddleware(app, [

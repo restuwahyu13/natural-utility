@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:manual": "jest --config ./jest.config.js --detectOpenHandles",
-    "test:lint": "standard  lib/**/*.js --fix",
+    "test:lint": "standard lib/**/*.js --fix",
     "test:codecov": "jest --detectOpenHandles && codecov",
     "test:coveralls": "jest --detectOpenHandles  --coverage && coveralls < coverage/lcov.info",
     "install:dev": "npm install express axios body-parser cookie-parser supertest -D"
