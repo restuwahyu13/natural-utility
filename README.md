@@ -106,7 +106,7 @@ server.listen(3000, () => console.log("server is running"));
 
 #### naturalModule
 
-  + **globalModule (@param: input, @param: module)** function method of `naturalModule` to register each given module without the need to rewrite` require`, then the module will be run as parallel, the module can also be accessed as a global in every file or route in many ways, which you haven't to re-register the same module as you want to use it, **note**: global module only supports writing format **CommonJS as require**.
+  + **globalModule ( inputs: [string...], modules: [string...] )** function method of `naturalModule` to register each given module without the need to rewrite` require`, then the module will be run as parallel, the module can also be accessed as a global in every file or route in many ways, which you haven't to re-register the same module as you want to use it, **note**: global module only supports writing format **CommonJS as require**.
 
 	-  **Before - example usage not using natural-utility**
 
@@ -138,7 +138,7 @@ server.listen(3000, () => console.log("server is running"));
 
 #### naturalRoute
 
-+ **routeMiddleware (@param: app, @param: function)** function method of `naturalRoute` to register each given route, then the route will be run as parallel, which it haven't to rewrite `app.use` **middleware** many of times to register every each route.
++ **routeMiddleware ( app,  routes: [string...] )** function method of `naturalRoute` to register each given route, then the route will be run as parallel, which it haven't to rewrite `app.use` **middleware** many of times to register every each route.
 
 	-  **Before - example usage not using natural-utility**
 
@@ -185,7 +185,7 @@ server.listen(3000, () => console.log("server is running"));
 
 #### naturalPlugin
 
-+  **pluginMiddleware (@param: app, @param: function)** method of the `naturalPlugin` function to register each given plugin, the plugin will be run as parallel, which it haven't to rewrite ` app.use` **middleware** many of times to register every each plugin.
++  **pluginMiddleware ( app, plugins: [string...], options: {} )** method of the `naturalPlugin` function to register each given plugin, the plugin will be run as parallel, which it haven't to rewrite ` app.use` **middleware** many of times to register every each plugin.
 
 	-  **Before - example usage not using natural-utility**
 
@@ -249,7 +249,7 @@ server.listen(3000, () => console.log("server is running"));
 
 #### naturalFlash
 
-+ **flashMessage ()** function method of `naturalFlash` to display an error message or any message that might be displayed later, every requested time is made, **note:**` cookie-parser` is needed for this function.
++ **flashMessage ( message: string | [string...] )** function method of `naturalFlash` to display an error message or any message that might be displayed later, every requested time is made, **note:**` cookie-parser` is needed for this function.
 
 	-  **Before - example usage not using natural-utility**
 

@@ -74,14 +74,14 @@
 		natural.globalModule(
 		["express", "http", "path",  "bodyParser", "logger", "cookieParser"],
 		["express", "http", "path",  "body-parser", "morgan", "cookie-parser"]);
-
+	
 		// init all module
 		const app = express();
 		const server = http.createServer(app);
-
+	
 		// init all route
 		const indexRoute = require("./routes/index.route");
-
+	
 		// register all plugin middleware
 		natural.pluginMiddleware(app, [
 		  bodyParser.urlencoded({ extended: false }),
@@ -90,105 +90,105 @@
 		  logger("dev"),
 		  natural.flashMessage()
 		]);
-
+	
 		// register template engine
 		app.set("views", path.join(__dirname, "/views"));
 		app.set("view engine", "ejs");
-
+	
 		// register all route midlleware
 		natural.routeMiddleware(app, [indexRoute]);
-
+	
 		// listening server
 		server.listen(3000, () => console.log("server is running"));
 		```
-
+	
 	+ ### API Reference
-
+	
 		+ #### naturalModule
-
-			+ **globalModule (@param: input, @param: module)** function method of `naturalModule` to register each given module without the need to rewrite` require`, then the module will be run as parallel, the module can also be accessed as a global in every file or route in many ways, which you haven't to to re-register the same module as you want to use it, **note**: global module only supports writing format **CommonJS as require**.
-
+	
+			+ **globalModule ( inputs: [string...], modules: [string...] )** function method of `naturalModule` to register each given module without the need to rewrite` require`, then the module will be run as parallel, the module can also be accessed as a global in every file or route in many ways, which you haven't to to re-register the same module as you want to use it, **note**: global module only supports writing format **CommonJS as require**.
+	
 		-  **Before - example usage not using natural-utility**
-
+	
 			+ ```javascript
 			  // register all module
 			  const express = require("express");
 			  const app = express();
 			  const http = require("http");
 			  const server = http.createServer(app);
-
+	
 			  // listening server
 			  server.listen(3000, () => console.log("server is running"));
 				```
-
+	
 		-  **After - example usage using natural-utility**
-
+	
 			+  ```javascript
 			   // register all module
 			   const natural = require("natural-utility");
 			   natural.globalModule(["express", "http"], ["express", "http"]);
-
+	
 			   // init all module
 			   const app = express();
 			   const server = http.createServer(app);
-
+	
 			   // listening server
 			   server.listen(3000, () => console.log("server is running"));
 				```
-
+	
 		+ #### naturalRoute
-
-			+ **routeMiddleware (@param: app, @param: function)** function method of `naturalRoute` to register each given route, then the route will be run as parallel, which it haven't to rewrite `app.use` **middleware** many of times to register every each route.
-
+	
+			+ **routeMiddleware ( app, routes: [string...] )** function method of `naturalRoute` to register each given route, then the route will be run as parallel, which it haven't to rewrite `app.use` **middleware** many of times to register every each route.
+	
 		-  **Before - example usage not using natural-utility**
-
+	
 			+ ```javascript
 			  // register all module
 			  const express = require("express");
 			  const app = express();
 			  const http = require("http");
 			  const server = http.createServer(app);
-
+	
 			  // init all route
 			  const indexRoute = require("./routes/home");
 			  const usersRoute = require("./routes/users");
-
+	
 			  // register all route middleware
 			  app.use(indexRoute);
 			  app.use(usersRoute);
-
+	
 			  // listening server
 			  server.listen(3000, () => console.log("server is running"));
 				```
-
+	
 		-  **After - example usage using natural-utility**
-
+	
 			+ ```javascript
 			  // register all module
 			  const natural = require("natural-utility");
 			  natural.globalModule(["express", "http"], ["express", "http"]);
-
+	
 			  // init all module
 			  const app = express();
 			  const server = http.createServer(app);
-
+	
 			  // init all route
 			  const indexRoute = require("./routes/home");
 			  const usersRoute = require("./routes/users");
-
+	
 			  // register all route middleware
 			  natural.routeMiddleware(app, [indexRoute, usersRoute]);
-
+	
 			  // listening server
 			  server.listen(3000, () => console.log("server is running"));
 				```
-
+	
 		+ #### naturalPlugin
-
-			+ **pluginMiddleware (@param: app, @param: function)** method of the `naturalPlugin` function to register each given plugin, the plugin will be run as parallel, which it haven't to rewrite ` app.use` **middleware** many of times to register every each plugin.
-
+	
+			+ **pluginMiddleware ( app, plugins: [string...], options: {} )** method of the `naturalPlugin` function to register each given plugin, the plugin will be run as parallel, which it haven't to rewrite ` app.use` **middleware** many of times to register every each plugin.
+	
 		-  **Before - example usage not using natural-utility**
-
+	
 			+ ```javascript
 			  // register all module
 			  const express = require("express");
@@ -198,64 +198,64 @@
 			  const bodyParser = require("body-parser");
 			  const cookieParser = require("cookie-parser");
 			  const logger = require("morgan");
-
+	
 			  // init all route
 			  const indexRoute = require("./routes/home");
 			  const usersRoute = require("./routes/users");
-
+	
 			  // register all plugin middleware
 			  app.use(bodyParser.urlencoded({ extended: false }));
 			  app.use(bodyParser.json());
 			  app.use(logger("dev"));
-
+	
 			  // register all route middleware
 			  app.use(indexRoute);
 			  app.use(usersRoute);
-
+	
 			  // listening server
 			  server.listen(3000, () => console.log("server is running"));
 			  ```
-
+	
 		-  **After - example usage using natural-utility**
-
+	
 			+ ```javascript
 			  // register all module
 			  const natural = require("natural-utility");
 			  natural.globalModule(
 				["express", "http", "bodyParser", "cookieParser", "logger"],
 				["express", "http", "body-parser", "cookie-parser", "morgan"]);
-
+	
 			  // init all module
 			  const app = express();
 			  const server = http.createServer(app);
-
+	
 			  // init all route
 			  const indexRoute = require("./routes/home");
 			  const usersRoute = require("./routes/users");
-
+	
 			  // register all plugin middleware
 			  natural.pluginMiddleware(app, [
 				bodyParser.urlencoded({ extended: false }),
 				bodyParser.json(),
 				logger("dev"),
 			  ]);
-
+	
 			  // register all route middleware
 			  natural.routeMiddleware(app, [indexRoute, usersRoute]);
-
+	
 			  // listening server
 			  server.listen(3000, () => console.log("server is running"));
 				```
-
+	
 		+ #### naturalFlash
-
-			+ **flashMessage ()** function method of `naturalFlash` to display an error message or any message that might be displayed later, every requested time is made, **note:**` cookie-parser` is needed for this function.
-
+	
+			+ **flashMessage ( message: string | [string...] )** function method of `naturalFlash` to display an error message or any message that might be displayed later, every requested time is made, **note:**` cookie-parser` is needed for this function.
+	
 		-  **Before - example usage not using natural-utility**
-
+	
 			+  ```javascript
 			   //app.js
-
+	
 			   // register all module
 			   const express = require("express");
 			   const app = express();
@@ -263,11 +263,11 @@
 			   const server = http.createServer(app);
 			   const flash = require("connect-flash");
 			   const session = require("express-session");
-
+	
 			   //init all route
 			   const indexRoute = require("./routes/home");
 			   const usersRoute = require("./routes/users");
-
+	
 			   // register all plugin middleware
 			   app.use(flash());
 			   app.use(session({
@@ -278,35 +278,35 @@
 			   app.use((req, res, next) => {
 				 res.locals.messages = require("express-message")(req, res);
 			   });
-
+	
 			   // register all route middleware
 			   app.use(indexRoute);
 			   app.use(usersRoute);
-
+	
 			   // listening server
 			   server.listen(3000, () => console.log("server is running"));
 			   ```
-
+	
 			+ ```javascript
 			  // routes/home.js
-
+	
 			  // register all module
 			  const express = require("express");
 			  const router = express.Router();
-
+	
 			  // setup route middleware
 			  router.get("/", (req, res, next) => {
 				req.flash("username already exist");
 				res.render("home", {});
 			  });
-
+	
 			  // export route middleware
 			  module.exports = router;
 				```
-
+	
 			+ ```html
 			  <!-- views/home.ejs -->
-
+	
 			  <html>
 			   <title> Natural </title>
 			    <body>
@@ -315,68 +315,68 @@
 			    </body>
 			  </html>
 				```
-
+	
 		-  **After - example usage using natural-utility**
-
+	
 			+ ```javascript
 			  // app.js
-
+	
 			  // register all module
 			  const natural = require("natural-utility");
 			  natural.globalModule(
 			  ["express", "http", "cookieParser"],
 			  ["express", "http", "cookie-parser"]);
-
+	
 			  // init all module
 			  const app = express();
 			  const server = http.createServer(app);
-
+	
 			  // init all route
 			  const indexRoute = require("./routes/home");
 			  const usersRoute = require("./routes/users");
-
+	
 			  // register all plugin middleware
 			  natural.pluginMiddleware(app, [
 				cookieParser(),
 				natural.flashMessage()
 			  ]);
-
+	
 			  // register all route middleware
 			  natural.routeMiddleware(app, [indexRoute]);
-
+	
 			  // listening server
 			  server.listen(3000, () => console.log("server is running"));
 				```
-
+	
 			+ ```javascript
 			  // routes/home.js
-
+	
 			  // register all module
 			  const express = express();
 			  const router = express.Router();
-
+	
 			  // setup route middleware
 			  router.get("/", (req, res, next) => {
-
+	
 			  // single message
 				req.flash("username already exist");
 				res.render("home", {});
 			  });
-
+	
 			  // export route middleware
 			  module.exports = router;
 				```
-
+	
 			+ ```javascript
 			  // routes/home.js
-
+	
 			  // register all module
 			  const express = express();
 			  const router = express.Router();
-
+	
 			  // setup route middleware
 			  router.get("/", (req, res, next) => {
-
+	
 			  // multiple message
 			    let errors = ["username is required", "email is required", "password is required"];
 			    for(let i of errors) {
@@ -384,14 +384,14 @@
 			    }
 				res.render("home", {});
 			  });
-
+	
 			  // export route middleware
 			  module.exports = router;
 				```
-
+	
 			+ ```html
 			  <!-- views/home.ejs -->
-
+	
 			  <html>
 			   <title> Natural </title>
 				<body>
@@ -402,7 +402,7 @@
 				```
 			+ ```html
 			  <!-- views/home.ejs -->
-
+	
 			  <html>
 			   <title> Natural </title>
 				<body>

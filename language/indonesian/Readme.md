@@ -104,7 +104,7 @@
 
 		+ #### naturalModule
 
-			+ **globalModule(@param: input, @param: module)** fungsi method dari `naturalModule` untuk  mendaftarkan setiap module yang diberikan tanpa perlu harus menulis  `require` berulang kali, kemudian module akan dijalankan secara parallel, module juga dapat diakses secara global disetiap file atau route yang berbeda, tanpa perlu harus mendaftarkan ulang kembali module yang sama ketika ingin digunakan, **catatan**: global module hanya support format penulisan **CommonJS as require**.
+			+ **globalModule( inputs: [string...], modules: [string...] )** fungsi method dari `naturalModule` untuk  mendaftarkan setiap module yang diberikan tanpa perlu harus menulis  `require` berulang kali, kemudian module akan dijalankan secara parallel, module juga dapat diakses secara global disetiap file atau route yang berbeda, tanpa perlu harus mendaftarkan ulang kembali module yang sama ketika ingin digunakan, **catatan**: global module hanya support format penulisan **CommonJS as require**.
 
 		-  **Before - example usage not using natural-utility**
 
@@ -136,7 +136,7 @@
 
 		+ #### naturalRoute
 
-			+ **routeMiddleware(@param: app, @param: function)** fungsi method dari `naturalRoute` untuk  mendaftarkan setiap route yang diberikan, kemudian route akan dijalankan secara parallel, tanpa perlu harus mengulangi menulis `app.use` **middleware** berulang kali untuk mendaftarkan setiap route.
+			+ **routeMiddleware( app, routes: [string...] )** fungsi method dari `naturalRoute` untuk  mendaftarkan setiap route yang diberikan, kemudian route akan dijalankan secara parallel, tanpa perlu harus mengulangi menulis `app.use` **middleware** berulang kali untuk mendaftarkan setiap route.
 
 		-  **Before - example usage not using natural-utility**
 
@@ -183,7 +183,7 @@
 
 		+ #### naturalPlugin
 
-			+ **pluginMiddleware(@param: app, @param: function)** fungsi method dari `naturalPlugin` untuk  mendaftarkan setiap plugin yang diberikan, kemudian plugin akan dijalankan secara parallel, tanpa perlu harus mengulangi menulis `app.use` **middleware** berulang kali untuk mendaftarkan setiap plugin.
+			+ **pluginMiddleware( app, plugins: [string...], options: {} )** fungsi method dari `naturalPlugin` untuk  mendaftarkan setiap plugin yang diberikan, kemudian plugin akan dijalankan secara parallel, tanpa perlu harus mengulangi menulis `app.use` **middleware** berulang kali untuk mendaftarkan setiap plugin.
 
 		-  **Before - example usage not using natural-utility**
 
@@ -247,7 +247,7 @@
 
 		+ #### naturalFlash
 
-			+ **flashMessage()** fungsi method dari `naturalFlash` untuk menampilkan pesan kesalahan atau pesan yang lainnya yang mungkin nanti akan ditampilkan,  setiap kali request dibuat, **catatan:** `cookie-parser` dibutuhkan untuk fungsi ini.
+			+ **flashMessage( message: string | [string...] )** fungsi method dari `naturalFlash` untuk menampilkan pesan kesalahan atau pesan yang lainnya yang mungkin nanti akan ditampilkan,  setiap kali request dibuat, **catatan:** `cookie-parser` dibutuhkan untuk fungsi ini.
 
 		-  **Before - example usage not using natural-utility**
 
