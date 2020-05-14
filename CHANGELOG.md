@@ -1,7 +1,12 @@
 natural ChangeLog
 -------------------------
 
-1.0.6.1
+1.0.8.
+ * add options config to pluginMiddleware for fastify
+ * fixed pluginMiddleware function for fastify
+ * fixed pluginMiddleware function for koa
+
+1.0.7.
  * fixed parallel pluginMiddleware support chaining middleware using koa
  * remove pluginMiddlewareAsync
 
