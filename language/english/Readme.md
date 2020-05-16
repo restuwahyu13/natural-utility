@@ -251,7 +251,7 @@
 
 		+ #### naturalFlash
 
-			+ **flashMessage ()** function method of `naturalFlash` to display an error message or any message that might be displayed later, every requested time is made, **note:**` cookie-parser` is not required now and flashMessage is now renamed to **flashExpress**, [more info check here](https://github.com/restuwahyu13/natural-utility/tree/master/example).
+			+ **flashMessage ()** function method of `naturalFlash` to display an error message or any message that might be displayed later, every requested time is made, **note:**` cookie-parser` is not required now and **flashMessage** is now renamed to **flashExpress**, [more info check here](https://github.com/restuwahyu13/natural-utility/tree/master/example).
 
 		-  **Before - example usage not using natural-utility**
 
