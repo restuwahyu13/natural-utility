@@ -1,4 +1,4 @@
-const natural = require("./index");
+const natural = require("./libs/index");
 
 // inject module
 natural.globalModule(

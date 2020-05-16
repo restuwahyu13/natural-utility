@@ -41,7 +41,7 @@
 	| Framework Support | globalModule | pluginMiddleware | flashMessage |
 	| ------------- | ------------- | ------------- | ------------- |
 	| Express | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-	| Koa | :heavy_check_mark: | :heavy_check_mark: | :x: |
+	| Koa | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:  |
 	| Hapi | :heavy_check_mark: | :x: | :x:  |
 	| Fastify | :heavy_check_mark: | :heavy_check_mark: | :x:  |
 	| Restify | :heavy_check_mark: | :x: | :x: |
@@ -59,11 +59,13 @@
 		+	[x] Parallel Route Middleware
 		+	[x] Parallel Plugin Middleware
 		+	[x] Flash Message
-		+ [x] Global Access Module
+		+ [x] Global Module Access
 
 	+ ### Installation
 		```sh
 		$ npm i natural-utility --save
+		| OR
+		$ yarn add natural-utility --save
 		```
 	+ ### Example Usage
 		```javascript
@@ -86,7 +88,7 @@
 		  bodyParser.json(),
 		  cookieParser(),
 		  logger("dev"),
-		  natural.flashMessage()
+		  natural.flashExpress()
 		]);
 
 		// register template engine
@@ -247,7 +249,7 @@
 
 		+ #### naturalFlash
 
-			+ **flashMessage( message: string | [string...] )** fungsi method dari `naturalFlash` untuk menampilkan pesan kesalahan atau pesan yang lainnya yang mungkin nanti akan ditampilkan,  setiap kali request dibuat, **catatan:** `cookie-parser` dibutuhkan untuk fungsi ini.
+			+ **flashMessage()** fungsi method dari `naturalFlash` untuk menampilkan pesan kesalahan atau pesan yang lainnya yang mungkin nanti akan ditampilkan,  setiap kali request dibuat, **catatan:** `cookie-parser` sekarang tidak lagi dibutuhkan dan sekarang flashMessage berganti nama menjadi **flashExpress**, [info lebih lanjut silahkan cek disini](https://github.com/restuwahyu13/natural-utility/tree/master/example).
 
 		-  **Before - example usage not using natural-utility**
 
@@ -336,7 +338,7 @@
 			  // register all plugin middleware
 			  natural.pluginMiddleware(app, [
 				cookieParser(),
-				natural.flashMessage()
+				natural.flashExpress()
 			  ]);
 
 			  // register all route middleware

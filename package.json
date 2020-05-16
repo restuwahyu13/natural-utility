@@ -1,8 +1,8 @@
 {
   "name": "natural-utility",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "natural-utility is a simple helper tool to get easily your work as a module loader, route middleware, plugin middleware and flash message.",
-  "main": "index.js",
+  "main": "libs/index.js",
   "scripts": {
     "test:manual": "jest --config ./jest.config.js --detectOpenHandles",
     "test:lint": "standard lib/**/*.js --fix",
@@ -24,7 +24,18 @@
   "bugs": {
     "url": "https://github.com/restuwahyu13/natural-utility/issues"
   },
-  "contributors": ["Restu Wahyu Saputra <restuwahyu13@gmail.com>","Vikri Kurniawan <vikrik112@gmail.com>"],
+  "contributors": [
+    {
+     "name": "Restu Wahyu Saputra", 
+    "email": "restuwahyu13@gmail.com",
+     "url": "https://github.com/restuwahyu13/natural-utility"
+    },
+    {
+     "name":"Vicri Kurniawan",
+     "email": "vicri112@gmail.com",
+     "url": "https://github.com/vicrfiport"
+    }
+  ],
   "keywords": [
     "npm",
     "global",

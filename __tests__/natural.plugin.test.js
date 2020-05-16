@@ -1,14 +1,13 @@
 var app = require('../tests')
-var natural = require('../index')
+var natural = require('../lib_clone/index')
 
 describe('group all test plugin middleware', () => {
   it('multiple test plugin middleware send 5000 duplicate plugin', async (done) => {
     const multiplePlugin = []
 
     for (let i = 0; i < 1000; i++) {
-      multiplePlugin.push(global.bodyParser.urlencoded({ extended: false }),
-        global.bodyParser.json(), global.bodyParser.text(), global.bodyParser.raw(),
-        global.cookieParser())
+      multiplePlugin.push(bodyParser.urlencoded({ extended: false }),
+        bodyParser.json(), bodyParser.text(), bodyParser.raw(), cookieParser())
     }
 
     await natural.pluginMiddleware(app, multiplePlugin)
@@ -24,15 +23,15 @@ describe('group all test plugin middleware', () => {
     for (let i = 0; i < 1000; i++) {
       multiplePlugin.push(
 
-        global.bodyParser.urlencoded({ extended: false }),
+        bodyParser.urlencoded({ extended: false }),
 
-        global.bodyParser.json(),
+        bodyParser.json(),
 
-        global.bodyParser.text(),
+        bodyParser.text(),
 
-        global.bodyParser.raw(),
+        bodyParser.raw(),
 
-        global.cookieParser()
+        cookieParser()
       )
     }
 

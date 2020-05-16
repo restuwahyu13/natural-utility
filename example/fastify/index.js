@@ -1,5 +1,5 @@
 // register all module
-const natural = require("../../index");
+const natural = require("../../lib/index");
 natural.globalModule(
 ["fastify", "path", "fastifyStatic", "fastifyView", "fastifyBody"],
 ["fastify", "path",  "fastify-static", "point-of-view", "fastify-formbody"]);

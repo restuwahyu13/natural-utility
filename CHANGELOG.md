@@ -1,5 +1,9 @@
-natural ChangeLog
+natural-utility ChangeLog
 -------------------------
+
+1.0.9.
+ * fixed flashMessage now cookie parser is not required
+ * add new feature flashMessage now support for koajs
 
 1.0.8.
  * add options config to pluginMiddleware for fastify

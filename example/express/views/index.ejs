@@ -4,10 +4,16 @@
 	<title>Flash Message</title>
 </head>
 <body>
+<!-- multiptle message -->
+     <ul>
+       <% if(messages()) { %>
+       <% messages().forEach((msg) => { %>
+         <li> <%= msg %> </li>
+       <%})%>
+      <%}%>
+    </ul>
 
-	<h1> <%- messages %> </h1>
-
-    <form action="/" method="post" encytpe="application/x-www.urlencoded">
+    <form action="/flash" method="post" encytpe="application/x-www.urlencoded">
 			<labek for="username">Username</label>
     	<input type="text" name="username" placeholder="enter username"/>
     	<input type="submit" value="login"/>

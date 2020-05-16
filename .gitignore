@@ -1,3 +1,5 @@
 node_modules
 big.dummy.json
 coverage
+libs
+lib/natural-plugin-middlewareAsync.js

@@ -42,7 +42,7 @@
 | Framework Support | globalModule | pluginMiddleware | flashMessage |
 | ------------- | ------------- | ------------- | ------------- |
 | Express | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Koa | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| Koa | :heavy_check_mark: | :heavy_check_mark: |  :heavy_check_mark:  |
 | Hapi | :heavy_check_mark: | :x: | :x:  |
 | Fastify | :heavy_check_mark: | :heavy_check_mark: | :x:  |
 | Restify | :heavy_check_mark: | :x: | :x: |
@@ -61,11 +61,13 @@
 +	[x] Parallel Route Middleware
 +	[x] Parallel Plugin Middleware
 +	[x] Flash Message
-+ [x] Global Access Module
++ [x] Global Module Access
 
 ### Installation
 ```sh
 $ npm i natural-utility --save
+| OR
+$ yarn add natural-utility --save
 ```
 ### Example Usage
 ```javascript
@@ -88,7 +90,7 @@ bodyParser.urlencoded({ extended: false }),
   bodyParser.json(),
   cookieParser(),
   logger("dev"),
-  natural.flashMessage()
+  natural.flashExpress()
 ]);
 
 // register template engine
@@ -249,7 +251,7 @@ server.listen(3000, () => console.log("server is running"));
 
 #### naturalFlash
 
-+ **flashMessage ( message: string | [string...] )** function method of `naturalFlash` to display an error message or any message that might be displayed later, every requested time is made, **note:**` cookie-parser` is needed for this function.
++ **flashMessage ( )** function method of `naturalFlash` to display an error message or any message that might be displayed later, every requested time is made, **note:**` cookie-parser` is not required now and **flashMessage** is now renamed to **flashExpress**, [more info check here](https://github.com/restuwahyu13/natural-utility/tree/master/example).
 
 	-  **Before - example usage not using natural-utility**
 
@@ -338,7 +340,7 @@ server.listen(3000, () => console.log("server is running"));
 		  // register all plugin middleware
 		  natural.pluginMiddleware(app, [
 			cookieParser(),
-			natural.flashMessage()
+			natural.flashExpress()
 		  ]);
 
 		  // register all route middleware
