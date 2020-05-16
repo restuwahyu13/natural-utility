@@ -2,7 +2,7 @@ module.exports = {
   verbose: true,
   collectCoverage: true,
   coverageDirectory: "./coverage/",
-  collectCoverageFrom: ["**/libs/**"],
+  collectCoverageFrom: ["**/lib/**"],
   roots: ["__tests__/"],
   testMatch: [
     "__tests__/.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)",
