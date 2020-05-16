@@ -8,7 +8,7 @@ module.exports = {
     "__tests__/.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)",
      "lib/.[jt]s?(x)", "**/?(*.)+(js|ts).[jt]s?(x)"
     ],
-  coveragePathIgnorePatterns: ["node_modules", "small.dumy.json","big.dumy.json"],
+  coveragePathIgnorePatterns: ["node_modules", "small.dumy.json","big.dumy.json", "lib/natural-flash-koa.js"],
   moduleFileExtensions: [
     "ts",
     "tsx",
