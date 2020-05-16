@@ -13,8 +13,7 @@ const app = express();
 natural.pluginMiddleware(app, [
   bodyParser.urlencoded({ extended: false }),
   bodyParser.json(),
-  cookieParser(),
-  natural.flashMessage()
+  cookieParser()
 ]);
 
 module.exports = app;
