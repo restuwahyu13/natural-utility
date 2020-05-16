@@ -20,13 +20,13 @@
   },
   "author": "restu wahyu saputra <restuwahyu13@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/restuwahyu13/natural-utility",
+  "homepage": "https://github.com/restuwahyu13/natural-utility/blob/master/README.md",
   "bugs": {
     "url": "https://github.com/restuwahyu13/natural-utility/issues"
   },
   "contributors": [
     {
-     "name": "Restu Wahyu Saputra", 
+     "name": "Restu Wahyu Saputra",
     "email": "restuwahyu13@gmail.com",
      "url": "https://github.com/restuwahyu13/natural-utility"
     },
