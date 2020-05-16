@@ -1,5 +1,5 @@
 var app = require('../tests')
-var natural = require('../lib_clone/index')
+var natural = require('../lib/index')
 
 describe('group all test plugin middleware', () => {
   it('multiple test plugin middleware send 5000 duplicate plugin', async (done) => {
