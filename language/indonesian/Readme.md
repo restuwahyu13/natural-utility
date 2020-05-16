@@ -249,7 +249,7 @@
 
 		+ #### naturalFlash
 
-			+ **flashMessage()** fungsi method dari `naturalFlash` untuk menampilkan pesan kesalahan atau pesan yang lainnya yang mungkin nanti akan ditampilkan,  setiap kali request dibuat, **catatan:** `cookie-parser` sekarang tidak lagi dibutuhkan dan sekarang flashMessage berganti nama menjadi **flashExpress**, [info lebih lanjut silahkan cek disini](https://github.com/restuwahyu13/natural-utility/tree/master/example).
+			+ **flashMessage()** fungsi method dari `naturalFlash` untuk menampilkan pesan kesalahan atau pesan yang lainnya yang mungkin nanti akan ditampilkan,  setiap kali request dibuat, **catatan:** `cookie-parser` sekarang tidak lagi dibutuhkan dan sekarang **flashMessage** berganti nama menjadi **flashExpress**, [info lebih lanjut silahkan cek disini](https://github.com/restuwahyu13/natural-utility/tree/master/example).
 
 		-  **Before - example usage not using natural-utility**
 
