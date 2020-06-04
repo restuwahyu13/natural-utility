@@ -1,7 +1,7 @@
 var app = require('../tests')
 var supertest = require('supertest')
 var request = supertest(app)
-var natural = require('../lib/index')
+var natural = require('../index')
 var naturalFlashTest = require('./data/natural_flash')
 
 describe('group all test flash message', () => {

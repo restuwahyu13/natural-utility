@@ -1,7 +1,7 @@
 var app = require('../tests')
 var supertest = require('supertest')
 var request = supertest(app)
-var natural = require('../lib/index')
+var natural = require('../index')
 
 var NaturalRouteTest = require('./data/natural_route/natural.custom.route')
 

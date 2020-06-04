@@ -1,5 +1,5 @@
 var app = require('../tests')
-var natural = require('../lib/index')
+var natural = require('../index')
 var inputs = []
 var modules = []
 

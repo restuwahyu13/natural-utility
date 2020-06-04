@@ -1,8 +1,7 @@
 // register all module
 const natural = require("../../lib/index");
 natural.globalModule(
-["express", "http", "mongoose", "bodyParser", "cookieParser", "logger", "path"],
-["express", "http", "mongoose", "body-parser", "cookie-parser", "morgan", "path"]);
+    ["express", "http", "mongoose", "bodyParser", "cookieParser", "logger", "path"], ["express", "http", "mongoose", "body-parser", "cookie-parser", "morgan", "path"]);
 
 // init all module
 const app = express();
@@ -17,11 +16,14 @@ const userRoute = require("./routes/user.route")
 mongoose.Promise = global.Promise;
 
 // setup database connection
-mongoose.connect("mongodb://localhost:27017/demo",
-{useNewUrlParser: true, useUnifiedTopology: true,
-useCreateIndex: true, useFindAndModify: false})
-.then(() => console.log("database connected successfully"))
-.catch(() => console.log("database connection failed"));
+mongoose.connect("mongodb://localhost:27017/demo", {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false
+    })
+    .then(() => console.log("database connected successfully"))
+    .catch(() => console.log("database connection failed"));
 
 //  register all plugin middleware
 natural.pluginMiddleware(app, [

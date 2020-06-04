@@ -1,75 +1,74 @@
 {
-  "name": "natural-utility",
-  "version": "1.1.0",
-  "description": "natural-utility is a simple helper tool to get easily your work as a module loader, route middleware, plugin middleware and flash message.",
-  "main": "libs/index.js",
-  "scripts": {
-    "test:manual": "jest --config ./jest.config.js --detectOpenHandles",
-    "test:lint": "standard lib/**/*.js --fix",
-    "test:codecov": "jest --detectOpenHandles && codecov",
-    "test:coveralls": "jest --detectOpenHandles  --coverage && coveralls < coverage/lcov.info",
-    "install:dev": "npm install express axios body-parser cookie-parser supertest -D"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/restuwahyu13/natural-utility"
-  },
-  "engines" : {
-    "node" : ">=11.0.0",
-    "npm" : "~6.4.1"
-  },
-  "author": "restu wahyu saputra <restuwahyu13@gmail.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/restuwahyu13/natural-utility/blob/master/README.md",
-  "bugs": {
-    "url": "https://github.com/restuwahyu13/natural-utility/issues"
-  },
-  "contributors": [
-    {
-     "name": "Restu Wahyu Saputra",
-    "email": "restuwahyu13@gmail.com",
-     "url": "https://github.com/restuwahyu13/natural-utility"
+    "name": "natural-utility",
+    "version": "1.1.1-beta.1",
+    "description": "natural-utility is a simple helper tool to get easily your work as a module loader, route middleware, plugin middleware and flash message.",
+    "main": "libs/index.js",
+    "scripts": {
+        "test:manual": "jest --config ./jest.config.js --detectOpenHandles",
+        "test:lint": "standard lib/**/*.js --fix",
+        "test:codecov": "jest --detectOpenHandles && codecov",
+        "test:coveralls": "jest --detectOpenHandles  --coverage && coveralls < coverage/lcov.info",
+        "install:dev": "npm install express axios body-parser cookie-parser supertest -D"
     },
-    {
-     "name":"Vicri Kurniawan",
-     "email": "vicri112@gmail.com",
-     "url": "https://github.com/vicrfiport"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/restuwahyu13/natural-utility"
+    },
+    "engines": {
+        "node": ">=11.0.0",
+        "npm": "~6.4.1"
+    },
+    "author": "restu wahyu saputra <restuwahyu13@gmail.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/restuwahyu13/natural-utility/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/restuwahyu13/natural-utility/issues"
+    },
+    "contributors": [{
+            "name": "Restu Wahyu Saputra",
+            "email": "restuwahyu13@gmail.com",
+            "url": "https://github.com/restuwahyu13/natural-utility"
+        },
+        {
+            "name": "Vicri Kurniawan",
+            "email": "vicri112@gmail.com",
+            "url": "https://github.com/vicrfiport"
+        }
+    ],
+    "keywords": [
+        "npm",
+        "global",
+        "module",
+        "dirname",
+        "library",
+        "asyncronus",
+        "syncronus",
+        "package",
+        "parallel",
+        "run parallel",
+        "require",
+        "commonjs",
+        "node_modules",
+        "dependency",
+        "injection",
+        "middleware",
+        "utility",
+        "util",
+        "nodejs",
+        "helpers",
+        "flash",
+        "message",
+        "node",
+        "javascript",
+        "express",
+        "koa",
+        "fastify"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "codecov": "^3.6.5",
+        "coveralls": "^3.1.0",
+        "jest": "^25.5.1",
+        "standard": "^14.3.4"
     }
-  ],
-  "keywords": [
-    "npm",
-    "global",
-    "module",
-    "dirname",
-    "library",
-    "asyncronus",
-    "syncronus",
-    "package",
-    "parallel",
-    "run parallel",
-    "require",
-    "commonjs",
-    "node_modules",
-    "dependency",
-    "injection",
-    "middleware",
-    "utility",
-    "util",
-    "nodejs",
-    "helpers",
-    "flash",
-    "message",
-    "node",
-    "javascript",
-    "express",
-    "koa",
-    "fastify"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "codecov": "^3.6.5",
-    "coveralls": "^3.1.0",
-    "jest": "^25.5.1",
-    "standard": "^14.3.4"
-  }
 }
