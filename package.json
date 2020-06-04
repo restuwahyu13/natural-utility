@@ -1,6 +1,6 @@
 {
   "name": "natural-utility",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "natural-utility is a simple helper tool to get easily your work as a module loader, route middleware, plugin middleware and flash message.",
   "main": "libs/index.js",
   "scripts": {
@@ -42,7 +42,7 @@
     "module",
     "dirname",
     "library",
-    "asyncornus",
+    "asyncronus",
     "syncronus",
     "package",
     "parallel",
