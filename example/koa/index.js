@@ -1,5 +1,5 @@
 // register all module
-const natural = require("../../lib_clone/index");
+const natural = require("../../lib/index");
 natural.globalModule(
 ["koa", "http", "Router", "mongoose", "bodyParser", "logger", "jwt", "views", "path"],
 ["koa", "http", "koa-router", "mongoose", "koa-body", "koa-logger", "jsonwebtoken", "koa-views", "path"]);

@@ -13,4 +13,3 @@ codecov.yml
 jest.config.js
 tests.js
 CHANGELOG.md
-lib

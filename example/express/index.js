@@ -1,5 +1,5 @@
 // register all module
-const natural = require("../../lib_clone/index");
+const natural = require("../../lib/index");
 natural.globalModule(
 ["express", "http", "mongoose", "bodyParser", "cookieParser", "logger", "path"],
 ["express", "http", "mongoose", "body-parser", "cookie-parser", "morgan", "path"]);

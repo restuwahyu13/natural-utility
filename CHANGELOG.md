@@ -1,6 +1,9 @@
 natural-utility ChangeLog
 -------------------------
 
+1.1.0.
+ * fixed bugs globalModule, routeMiddleware, pluginMiddleware
+
 1.0.9.
  * fixed flashMessage now cookie parser is not required
  * add new feature flashMessage now support for koajs
